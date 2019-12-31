@@ -97,6 +97,8 @@ func parseFlags() error {
 	gcfg.Auth.OpenID = defaultOpenID
 	gcfg.GoogleTrackerID = "UA-81205425-2"
 	gcfg.Title = "Go HTTP File Server"
+	gcfg.Upload = true
+	gcfg.Delete = true
 
 	kingpin.HelpFlag.Short('h')
 	kingpin.Version(versionMessage())
